@@ -143,14 +143,16 @@ Open the project settings file, **django-locallibrary-tutorial/locallibrary/sett
 
 ```bash
 INSTALLED_APPS = [
+    # Add our new application 
+    'catalog.apps.CatalogConfig', # This object was created for us in /catalog/apps.py
+
+    # Previous applications
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Add our new application
-    'catalog.apps.CatalogConfig', # This object was created for us in /catalog/apps.py
 ]
 ```
 
